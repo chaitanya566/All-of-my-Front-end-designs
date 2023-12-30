@@ -8,7 +8,7 @@ let model;
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xffffff); // Set the background color to white
-const existingElement = document.getElementById('yourExistingElement');
+const existingElement = document.getElementById('canvas_scene');
 
 const camera = new THREE.PerspectiveCamera(25, existingElement.clientWidth /existingElement.clientHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -41,13 +41,9 @@ loader.load('./blender_stuff/ALL_DONE3.glb', function (gltf) {
     // Adjust the camera position based on the bounding box
     const center = new THREE.Vector3();
     boundingBox.getCenter(center);
-
-
-    // Rotate the camera by 90 degrees around the Y-axis
     camera.position.copy(center.clone().add(new THREE.Vector3(0, 3 * boundingBox.max.z, 0)));
     camera.position.applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI *1.5);
 
-    // Set the camera's target to the center of the bounding box
     camera.lookAt(center);
 
     scene.add(model);
@@ -58,9 +54,9 @@ loader.load('./blender_stuff/ALL_DONE3.glb', function (gltf) {
 
 //setting up teh intercation
 
-const yourExistingElement = document.getElementById('yourExistingElement');
+const canvas1 = document.getElementById('canvas_scene');
 
-yourExistingElement.addEventListener('mouseenter', function () {
+canvas1.addEventListener('mouseenter', function () {
     // Code to execute when the element is being hovered
 action1.loop=THREE.LoopOnce;
 console.log('entered')
@@ -77,7 +73,7 @@ console.log('entered')
     })
 });
 
-yourExistingElement.addEventListener('mouseleave', function () {
+canvas1.addEventListener('mouseleave', function () {
     // Code to execute when the element is not being hovered
     console.log('Element is not being hovered!');
     action2.loop=THREE.LoopOnce;
@@ -102,7 +98,7 @@ controls.dampingFactor = 0.25;
 controls.screenSpacePanning = false;
 controls.maxPolarAngle = Math.PI / 2;
 
-//---------------------
+//---------------------cursor-related-stuff
 const cursordot = document.querySelector("[data-cursor-dot]")
 const cursoroutline = document.querySelector("[data-cursor-outline]")
 window.addEventListener("mousemove",function(e){
@@ -122,7 +118,7 @@ window.addEventListener("mousemove",function(e){
 })
 
 
-//---------------------------
+//-------------animating it using frames with 
 const clock= new THREE.Clock();
 function animate() {
     requestAnimationFrame(animate);

@@ -81,7 +81,7 @@ body{
     z-index:3;
     pointer-events: none;
 }
-#yourExistingElement {
+#canvas_scene {
     height: 30vh;
     width: 50vw;
     /* border: 2px solid black;  */
