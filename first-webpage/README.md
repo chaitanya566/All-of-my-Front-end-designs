@@ -41,7 +41,7 @@ Make sure you have the following installed:
         import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
         import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     ```
-- Importing the core THREE.js library for 3D graphics.
+- Importing the core ```THREE.js``` library for 3D graphics.
 - Loading GLTF ```(Graphics Library Transmission Format)``` models.
 - Adding orbit controls for interaction.
 2. **Global Variables:**
@@ -61,10 +61,10 @@ Make sure you have the following installed:
 - Configuring a ```perspective camera``` with parameters for field of view, aspect ratio, and near/far clipping planes.
 
 5. **Renderer Setup:**
-- Initializing a WebGL renderer with antialiasing and appending it to the container element.
+- Initializing a ```WebGL renderer``` with antialiasing and appending it to the container element.
 
 6. **Lighting:** 
-- Adding a hemisphere light to provide ambient lighting in the scene. 
+- Adding a ```hemisphere light``` to provide ambient lighting in the scene. 
 
 7. **Loading 3D Model:** 
 - Utilizing the GLTFLoader to load a pre-made 3D model in ```GLTF format (.glb)```.
@@ -78,5 +78,5 @@ Make sure you have the following installed:
 - Implementing cursor-related effects with a dot and an outline that follow the mouse cursor's position.
 
 10. **Animating the Scene:**
-- Implementing a function (animate()) to continuously update the scene, including controls and animations, using the
+- Implementing a function ```(animate())``` to continuously update the scene, including controls and animations, using the
 ```requestAnimationFrame```  loop.
