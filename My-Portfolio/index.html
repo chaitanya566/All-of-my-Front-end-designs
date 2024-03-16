@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Secondary-Main-Div three.js app</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+
+</head>
+
+<link rel="stylesheet" href="./static/css/styles.css">
+<script type="module" src="/static/js/main.js"></script>
+<script src="./static/js/scroll-animation.js"></script>
+
+<body>
+    <div class="header" id="Main-header">
+
+        <ul id="header_ul">
+            <li class="dropdown" id="portfolio-img">
+                <div>
+                    <img src="./images/pngwing.com.png" alt="">
+                </div>
+            </li>
+            <li id="home" class="dropdown">
+                <span onclick="scrollToSection('Secondary-Main-Div-Scroll')">Home</span>
+                <div class="under_bar"></div>
+
+            </li>
+            <li id="About-Me-header" class="dropdown">
+                <span onclick="scrollToSection('About-Me-Scroll')">About Me</span>
+                <div class="under_bar"></div>
+
+            </li>
+            <li id="My-Skills-Header" class="dropdown">
+                <span onclick="scrollToSection('My-Skills-Scroll')">My Skills</span>
+                <div class="under_bar"></div>
+
+            </li>
+            <li id="My-Projects-Header" class="dropdown">
+                <span onclick="scrollToSection('My-Projects-Scroll')">My Projects</span>
+                <div class="under_bar"></div>
+
+            </li>
+            <li id="contact-Header" class="dropdown">
+                <span onclick="scrollToSection('Contact-Details-Scroll')">contact Us</span>
+                <div class="under_bar"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="Background-for-header"></div>
+    </div>
+    <div id="Secondary-Main-Div-Scroll"></div>
+    <div class="Secondary-Main-Div" id="Secondary-Main-Div">
+
+        <div class="First-style-Div" id="First-style-Div"></div>
+        <div class="one-text"></div>
+        <div class="Second-style-Div"></div>
+        <div class="Third-style-Div"></div>
+
+        <div id="blender-Renderer-Div">
+            <div id="Canvas-Renderer-Div"></div>
+        </div>
+
+        <div class="outer-diamond-container">
+            <div class="diamond-container">
+                <div class="diamond">
+                    <img src="./images/flower.jpg" alt="Your Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="About-Me-Scroll"></div>
+    <div class="About-Me" id="About-Me">
+        <div class="About-Me-Image">
+            <img src="./images/Other-Images/About-Me.jpg" alt="About-Me_image">
+        </div>
+        <div class="About-Me-Info">
+            <div class="About-Me-Heading">
+                <h3>About Me 🌟 </h3>
+            </div>
+            <h4><br>A Dedicated Full-Stack Developer based in India 👨‍💻</h4>
+            <p><br>Hi! Im Chaitanya Saradhi studying 2nd Year B.Tech CSE in SRM Chennai<br><br>With a solid foundation
+                in both front-end and back-end development, I am committed to mastering
+                various technologies and frameworks to deliver high-quality, scalable applications. Eager to tackle
+                challenges and continuously expand my knowledge, I aim to contribute meaningfully to the tech industry.
+                My goal is to create impactful software solutions that enhance user experiences and drive innovation.
+            </p>
+        </div>
+    </div>
+
+    <div id="My-Skills-Scroll"></div>
+    <div class="My-Skills" id="My-Skills">
+        <div class="My-Skills-Image">
+            <img src="./images/Other-Images/My-Skills.jpeg" alt="">
+        </div>
+        <div class="My-Skills-Info">
+            <div class="My-Skills-Heading">
+                <h3>My Current SKills 🛠️ </h3>
+            </div>
+            <div class="My-Skills-info">
+                <p><br>With a Heavy understanding of Python, JavaScript and Java, coupled with proficiency in machine
+                    learning and other languages, I am actively expanding my expertise by delving into deep learning
+                    methodologies and exploring various front-end frameworks. Emphasizing practical implementation, I
+                    aim to master these domains to become a versatile developer capable of tackling intricate challenges
+                    and spearheading innovative solutions.</p>
+            </div>
+            <div class="My-Skills-Images">
+                <p><br></p>
+                <a href="https://www.python.org/" target="_blank"><img src="./images/My-Skills/Python.svg" alt=""></a>
+                <a href="https://www.java.com/" target="_blank"><img src="./images/My-Skills/Java.svg" alt=""></a>
+                <a href="https://isocpp.org/" target="_blank"><img src="./images/My-Skills/C++.svg" alt=""></a>
+                <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img
+                        src="./images/My-Skills/C.svg" alt=""></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img
+                        src="./images/My-Skills/HTML.svg" alt=""></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img
+                        src="./images/My-Skills/CSS.svg" alt=""></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img
+                        src="./images/My-Skills/JavaScript.svg" alt=""></a>
+                <a href="https://www.mysql.com/" target="_blank"><img src="./images/My-Skills/My-Sql.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="My-Projects-Scroll"></div>
+    <div class="projects" id="My-Projects">
+        <div class="My-Projects-Heading">
+            <h2>My Projects 🚀 </h2>
+        </div>
+        <div class="My-Projects-Info">
+            <p>
+            <h3>Each project is a unique piece of development 🎨</h3>
+            </p>
+        </div>
+        <div class="type1" id="project1">
+            <div class="type-info1 video-div">
+                <div class="text-for-projects">
+                    <div class="Project-Heading">
+                        <h3>Educational Institute Webpage 🏫</h3>
+                    </div>
+                    <p class="text-information"><br>Crafted a visually stunning and interactive educational institute
+                        website leveraging front-end, while employing Vite and Three.js to seamlessly import a
+                        distinctive Blender model enriched with animations.</p>
+                    <a href="https://github.com/chaitanya566/Front-end-designs" target="_blank" class="github-link">
+                        <div class=" github">
+                            <p><br><br></p>
+                            <img class="git-logo" src="./images/Git-Hub logos/GitHub_Logo.png" alt="GitHub Logo">
+                            <img class="git-word" src="./images/Git-Hub logos/github-mark.svg" alt="GitHub Mark">
+                        </div>
+                    </a>
+                </div>
+
+                <div id="project1-video">
+                    <video controls autoplay loop>
+                        <source src="./images/Front-End/Educational-institute-website.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="type2" id="project2">
+            <div id="container3" class="container container-type1">
+                <div class="box-image">
+                    <img src="./images/Automatic-Attendence-Recorder/Create-Account.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Automatic-Attendence-Recorder/Get-BSSID.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Automatic-Attendence-Recorder/Identified-Images.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Automatic-Attendence-Recorder/Poster.jpg" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Automatic-Attendence-Recorder/Server-Image.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Automatic-Attendence-Recorder/Take-Image.png" alt="example" />
+                </div>
+            </div>
+
+            <div class="info type-info2">
+
+                <div class="text-for-projects types1">
+                    <div class="Project-Heading">
+                        <h3>Automatic Attendence Recorder 📝</h3>
+                    </div>
+                    <p class="text-information"><br>Created a real-time facial recognition attendance system using
+                        JavaScript and Flask, integrating Face-API for AI capabilities and MySQL for secure data
+                        storage, enabling efficient attendance recording through live video or photo uploads with canvas
+                        overlay.</p>
+                </div>
+
+
+                <a href="https://github.com/chaitanya566/Automatic-Attendence-recorder" target="_blank" class="github-link">
+                    <div class=" github">
+                        <p><br><br></p>
+                        <img class="git-logo" src="./images/Git-Hub logos/GitHub_Logo.png" alt="GitHub Logo">
+                        <img class="git-word" src="./images/Git-Hub logos/github-mark.svg" alt="GitHub Mark">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="type1" id="project3">
+            <div class="info type-info1">
+                <div class="text-for-projects">
+                    <div class="Project-Heading">
+                        <h3>Rock Paper Scissors ✊🖐️✌️</h3>
+                    </div>
+                    <p class="text-information"><br>Developed a captivating real-time hand gesture-based Rock Paper
+                        Scissors
+                        game using Mediapipe AI for gesture recognition. Seamlessly integrated authentication, gameplay,
+                        and MySQL database storage for an immersive experience, fostering efficiency and scalability.
+                    </p>
+                </div>
+
+
+                <a href="https://github.com/chaitanya566/Rock-Paper-Scissors" target="_blank" class="github-link">
+                    <div class=" github">
+                        <p><br><br></p>
+                        <img class="git-logo" src="./images/Git-Hub logos/GitHub_Logo.png" alt="GitHub Logo">
+                        <img class="git-word" src="./images/Git-Hub logos/github-mark.svg" alt="GitHub Mark">
+                    </div>
+                </a>
+
+            </div>
+            <div id="container2" class="container container-type2">
+                <div class="box-image">
+                    <img src="./images/Rock-Paper_scissors/login.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Rock-Paper_scissors/lose.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Rock-Paper_scissors/main.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Rock-Paper_scissors/Mysql.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Rock-Paper_scissors/signup.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Rock-Paper_scissors/win.png" alt="example" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="type2" id="project4">
+
+
+            <div id="container1" class="container container-type1">
+                <div class="box-image">
+                    <img src="./images/Hotel_management/Booking_done.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Hotel_management/Create_hotel.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Hotel_management/Final_booking.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Hotel_management/Final_Room_features.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Hotel_management/Room_features.png" alt="example" />
+                </div>
+                <div class="box-image">
+                    <img src="./images/Hotel_management/start.png" alt="example" />
+                </div>
+            </div>
+
+            <div class="info type-info2">
+
+                <div class="text-for-projects types1">
+                    <div class="Project-Heading">
+                        <h3>Hotel Management System 🏬</h3>
+                    </div>
+                    <p class="text-information">
+                        <br>Crafted a robust Hotel Management System in C++, featuring intuitive
+                        room management across multiple floors with varied facilities, offering a user-friendly
+                        interface, dynamic configuration, and error handling, along with clear instructions for
+                        compiling and running using MinGW.
+                    </p>
+                </div>
+
+                <a href="https://github.com/chaitanya566/Hotel-Management-system" target="_blank" class="github-link">
+                    <div class=" github">
+                        <p><br><br></p>
+                        <img class="git-logo" src="./images/Git-Hub logos/GitHub_Logo.png" alt="GitHub Logo">
+                        <img class="git-word" src="./images/Git-Hub logos/github-mark.svg" alt="GitHub Mark">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" />
+    </div>
+    <div id="Contact-Details-Scroll"></div>
+    <div class="Contact-Heading" id="Contact-Details">
+        <h3>Contact Me 📬</h3>
+    </div>
+    <div class="Contact-Details">
+        <div class="Contact-Details">
+
+            <div class="Contact-Location">
+                <div class="Contact-Location-Image">
+                    <img src="./images/Contact/Location.png" alt="Location image">
+                </div>
+                <div class="Contact-Location-Info">
+                    <p>Location : SRM University Chennai,India</p>
+                </div>
+            </div>
+            <div class="Contact-E-Mail">
+                <div class="Contact-E-Mail-Image">
+                    <img src="./images/Contact/E-Mail.png" alt="E-Mail image">
+                </div>
+                <div class="Contact-E-Mail-Info">
+                    <p>E-Mail : eerla.chaitanya@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
